@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.top-ball-bg {
+  position: absolute;
+  left: -285px;
+  top: -505px;
+  z-index: -1;
+}
+
+.bottom-ball-bg {
+  position: absolute;
+  right: -230px;
+  bottom: -634px;
+  z-index: -1;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+}
+
+.avatar {
+  text-align: center;
+  margin-top: -58px;
+}
+
+.avatar > img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.card > h1 {
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  text-align: center;
+  color: hsl(229, 23%, 23%);
+}
+
+.card > h1 > span {
+  margin-left: 4px;
+  color: hsl(0, 0%, 59%);
+  font-weight: normal;
+}
+
+.card > p {
+  margin: 11px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+}
+
+.card-informations {
+  margin-top: 26px;
+  border-top: 1px solid hsla(227, 10%, 46%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 87px;
+  padding: 0 48px;
+}
+
+.card-informations > div {
+  width: 55px;
+}
+
+.card-informations > div > h2 {
+  margin: 0;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  line-height: 30px;
+}
+
+.card-informations > div > p {
+  margin: 0;
+  font-size: 12px;
+  color: hsl(0, 0%, 59%);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: unset;
+    max-width: 88%;
+  }
+
+  .top-ball-bg {
+    left: -483px;
+    top: -404px;
+    width: 695px;
+  }
+
+  .bottom-ball-bg {
+    right: -479px;
+    bottom: -372px;
+    width: 695px;
+  }
+}
